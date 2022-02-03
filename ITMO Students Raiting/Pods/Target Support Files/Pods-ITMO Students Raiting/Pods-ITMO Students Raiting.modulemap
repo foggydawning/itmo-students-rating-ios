@@ -1,0 +1,6 @@
+framework module Pods_ITMO_Students_Raiting {
+  umbrella header "Pods-ITMO Students Raiting-umbrella.h"
+
+  export *
+  module * { export * }
+}

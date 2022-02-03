@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20FC4D2D15AEEF3CA43FCE64 /* Pods_ITMO_Students_Raiting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F621755D111256F92AF46308 /* Pods_ITMO_Students_Raiting.framework */; };
 		D31B4BC927ABE3480051A227 /* ITMO_Students_RaitingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B4BC827ABE3480051A227 /* ITMO_Students_RaitingApp.swift */; };
 		D31B4BCB27ABE3480051A227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B4BCA27ABE3480051A227 /* ContentView.swift */; };
 		D31B4BCD27ABE34A0051A227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31B4BCC27ABE34A0051A227 /* Assets.xcassets */; };
@@ -14,11 +15,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03D5CCA314FC8BC951A75D42 /* Pods-ITMO Students Raiting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO Students Raiting.debug.xcconfig"; path = "Target Support Files/Pods-ITMO Students Raiting/Pods-ITMO Students Raiting.debug.xcconfig"; sourceTree = "<group>"; };
+		0B60BF00BE2B628136CA19C4 /* Pods-ITMO Students Raiting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO Students Raiting.release.xcconfig"; path = "Target Support Files/Pods-ITMO Students Raiting/Pods-ITMO Students Raiting.release.xcconfig"; sourceTree = "<group>"; };
 		D31B4BC527ABE3480051A227 /* ITMO Students Raiting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITMO Students Raiting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31B4BC827ABE3480051A227 /* ITMO_Students_RaitingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITMO_Students_RaitingApp.swift; sourceTree = "<group>"; };
 		D31B4BCA27ABE3480051A227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D31B4BCC27ABE34A0051A227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D31B4BCF27ABE34A0051A227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F621755D111256F92AF46308 /* Pods_ITMO_Students_Raiting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITMO_Students_Raiting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FC4D2D15AEEF3CA43FCE64 /* Pods_ITMO_Students_Raiting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5797A8BDF13DB89EC6CD11BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F621755D111256F92AF46308 /* Pods_ITMO_Students_Raiting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68DC0D2A859B7E8EC4658089 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03D5CCA314FC8BC951A75D42 /* Pods-ITMO Students Raiting.debug.xcconfig */,
+				0B60BF00BE2B628136CA19C4 /* Pods-ITMO Students Raiting.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D31B4BBC27ABE3480051A227 = {
 			isa = PBXGroup;
 			children = (
 				D31B4BC727ABE3480051A227 /* ITMO Students Raiting */,
 				D31B4BC627ABE3480051A227 /* Products */,
+				68DC0D2A859B7E8EC4658089 /* Pods */,
+				5797A8BDF13DB89EC6CD11BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D31B4BD327ABE34A0051A227 /* Build configuration list for PBXNativeTarget "ITMO Students Raiting" */;
 			buildPhases = (
+				05A24A71BCA7245D0DE7C9E8 /* [CP] Check Pods Manifest.lock */,
 				D31B4BC127ABE3480051A227 /* Sources */,
 				D31B4BC227ABE3480051A227 /* Frameworks */,
 				D31B4BC327ABE3480051A227 /* Resources */,
+				937C072C36D288E5C5F31535 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +191,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05A24A71BCA7245D0DE7C9E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ITMO Students Raiting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		937C072C36D288E5C5F31535 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ITMO Students Raiting/Pods-ITMO Students Raiting-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ITMO Students Raiting/Pods-ITMO Students Raiting-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ITMO Students Raiting/Pods-ITMO Students Raiting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D31B4BC127ABE3480051A227 /* Sources */ = {
@@ -229,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -284,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -296,6 +365,7 @@
 		};
 		D31B4BD427ABE34A0051A227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03D5CCA314FC8BC951A75D42 /* Pods-ITMO Students Raiting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,7 +381,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +397,7 @@
 		};
 		D31B4BD527ABE34A0051A227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B60BF00BE2B628136CA19C4 /* Pods-ITMO Students Raiting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,7 +413,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
