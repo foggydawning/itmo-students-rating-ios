@@ -11,7 +11,7 @@ import SwiftUI
 struct ITMO_Students_RaitingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            YearChoosingView()
         }
     }
 }

@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		20FC4D2D15AEEF3CA43FCE64 /* Pods_ITMO_Students_Raiting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F621755D111256F92AF46308 /* Pods_ITMO_Students_Raiting.framework */; };
 		D31B4BC927ABE3480051A227 /* ITMO_Students_RaitingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B4BC827ABE3480051A227 /* ITMO_Students_RaitingApp.swift */; };
-		D31B4BCB27ABE3480051A227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B4BCA27ABE3480051A227 /* ContentView.swift */; };
 		D31B4BCD27ABE34A0051A227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31B4BCC27ABE34A0051A227 /* Assets.xcassets */; };
 		D31B4BD027ABE34A0051A227 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31B4BCF27ABE34A0051A227 /* Preview Assets.xcassets */; };
+		D31B4BDF27ABF6A20051A227 /* YearChoosingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B4BDE27ABF6A20051A227 /* YearChoosingView.swift */; };
+		D31B4BE127ABF6AE0051A227 /* YearChoosingStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B4BE027ABF6AE0051A227 /* YearChoosingStruct.swift */; };
+		D31B4BE327ABF6BA0051A227 /* YearChoosingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31B4BE227ABF6BA0051A227 /* YearChoosingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +21,11 @@
 		0B60BF00BE2B628136CA19C4 /* Pods-ITMO Students Raiting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ITMO Students Raiting.release.xcconfig"; path = "Target Support Files/Pods-ITMO Students Raiting/Pods-ITMO Students Raiting.release.xcconfig"; sourceTree = "<group>"; };
 		D31B4BC527ABE3480051A227 /* ITMO Students Raiting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITMO Students Raiting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D31B4BC827ABE3480051A227 /* ITMO_Students_RaitingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITMO_Students_RaitingApp.swift; sourceTree = "<group>"; };
-		D31B4BCA27ABE3480051A227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D31B4BCC27ABE34A0051A227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D31B4BCF27ABE34A0051A227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D31B4BDE27ABF6A20051A227 /* YearChoosingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearChoosingView.swift; sourceTree = "<group>"; };
+		D31B4BE027ABF6AE0051A227 /* YearChoosingStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearChoosingStruct.swift; sourceTree = "<group>"; };
+		D31B4BE227ABF6BA0051A227 /* YearChoosingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearChoosingViewModel.swift; sourceTree = "<group>"; };
 		F621755D111256F92AF46308 /* Pods_ITMO_Students_Raiting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ITMO_Students_Raiting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -51,7 +55,6 @@
 				03D5CCA314FC8BC951A75D42 /* Pods-ITMO Students Raiting.debug.xcconfig */,
 				0B60BF00BE2B628136CA19C4 /* Pods-ITMO Students Raiting.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,6 +108,7 @@
 		D31B4BD927ABEB5F0051A227 /* Struct */ = {
 			isa = PBXGroup;
 			children = (
+				D31B4BE027ABF6AE0051A227 /* YearChoosingStruct.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -112,7 +116,7 @@
 		D31B4BDA27ABEB670051A227 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D31B4BCA27ABE3480051A227 /* ContentView.swift */,
+				D31B4BDE27ABF6A20051A227 /* YearChoosingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +124,7 @@
 		D31B4BDB27ABEB6D0051A227 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D31B4BE227ABF6BA0051A227 /* YearChoosingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -239,8 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31B4BCB27ABE3480051A227 /* ContentView.swift in Sources */,
+				D31B4BDF27ABF6A20051A227 /* YearChoosingView.swift in Sources */,
 				D31B4BC927ABE3480051A227 /* ITMO_Students_RaitingApp.swift in Sources */,
+				D31B4BE127ABF6AE0051A227 /* YearChoosingStruct.swift in Sources */,
+				D31B4BE327ABF6BA0051A227 /* YearChoosingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
